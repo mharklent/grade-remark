@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+
+			<title>Remarks [Mhar Klent C. Alcontin]</title>
+
+			<link rel="stylesheet" type="text/css" href="Remarks.css">
+
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+			<link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Raleway" rel="stylesheet">
+
+		</head>
+
+		<body>
+
+			<br><br><br><br><br><br>
+
+			<center>
+
+				<div>
+
+					<h1>Grade Remark</h1>
+
+				</div>
+
+				<br>
+
+				<div>
+
+					<label>Enter Grade:</label>
+
+					<input type="text" id="grades" >
+
+					<input type="button" value="SUBMIT" name="" onclick="result()">
+
+				<br><br>
+
+				</div>
+
+					<h1>Remarks</h1>
+
+					<br><br>
+
+					<h1 id="result"></h1>
+
+			</center>
+
+
+		<script type="text/javascript">
+
+				function result()
+
+				{
+
+					var num = Number(document.getElementById("grades").value);
+
+					var bracket = "";
+
+					if(isNaN(num)==false)
+
+					{
+
+						if(num>94)
+
+						{
+
+							document.getElementById("result").innerHTML = "Exellent";
+
+						}
+
+						else if(num>84)
+
+						{
+
+							document.getElementById("result").innerHTML = "Very Good";
+
+						}
+
+						else if(num>79)
+
+						{
+
+							document.getElementById("result").innerHTML = "Good";
+
+						}
+
+						else if(num>74)
+
+						{
+
+							document.getElementById("result").innerHTML	= "Nice";
+
+						}
+
+						else if(num>64)
+
+						{
+
+							document.getElementById("result").innerHTML = "Poor";
+
+						}
+
+						else{
+
+							document.getElementById("result").innerHTML = "invalid";
+
+						}
+
+					}
+					else
+					{
+						document.getElementById("result").innerHTML = "not a number";
+					}
+
+				}
+
+			</script>
+
+		</body>
+
+	</html>
+
